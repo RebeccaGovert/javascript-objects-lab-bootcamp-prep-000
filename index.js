@@ -1,8 +1,9 @@
 var recipes = { ingredients: 'measurment' };
 
-function updateObjectWithKeyAndValue(object, key, value) { //non destructive updates original object
+function updateObjectWithKeyAndValue(object, key, value) { 
   return Object.assign(object, { [key]: value });
 }
+//non destructive updates original object
 
 function updateObjectWithKeyAndValue (object, key, value) { // non destructive gives new object with update
  var newObj = Object.assign({}, object, { [key]: value });
