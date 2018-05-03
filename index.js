@@ -5,10 +5,11 @@ function updateObjectWithKeyAndValue(object, key, value) {
 }
 //non destructive updates original object
 
-function updateObjectWithKeyAndValue (object, key, value) { // non destructive gives new object with update
+function updateObjectWithKeyAndValue (object, key, value) { 
  var newObj = Object.assign({}, object, { [key]: value });
  return newObj;
 }
+// non destructive gives new object with update
 
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
   object[key] = value;
